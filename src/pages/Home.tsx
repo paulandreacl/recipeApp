@@ -1,6 +1,6 @@
-import { useQuery } from '@tanstack/react-query';
+//import { useQuery } from '@tanstack/react-query';
 import styles from './Home.module.scss';
-import { fetchRecipes } from '../api/spoonacular';
+//import { fetchRecipes } from '../api/spoonacular';
 import Recipe from '../components/Recipe';
 import type { Recipe as RecipeInterface } from '../../types/recipe';
 
