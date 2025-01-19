@@ -79,7 +79,7 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <div className={styles.bannerContainer}>
-        <img src="/src/assets/banner.png" alt="Banner" />
+        <img src="/imgs/banner.png" alt="Banner" />
         <div className={styles.bannerText}>
           <div>Recetas</div>
           <div>para todos</div>
