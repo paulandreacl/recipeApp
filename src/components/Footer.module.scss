@@ -1,0 +1,56 @@
+.footer {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.bgFooter {
+  background: transparent linear-gradient(180deg, #c2e3f3 0%, #6aa3c1 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 4px 6px 23px #a9a9a911;
+  height: 167px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font: normal normal normal 56px/67px Monster Clubhouse;
+  text-align: left;
+  color: #425966;
+  padding-left: 166px;
+}
+
+.imgSection {
+  margin-left: 200px;
+  margin-bottom: 24px;
+}
+
+.footer img {
+  max-height: 278px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .bgFooter {
+    height: 116px;
+  }
+  .text {
+    font: normal normal normal 39px/47px Monster Clubhouse;
+    padding-left: 48px;
+  }
+  .imgSection {
+    margin-left: 80px;
+  }
+  .footer img {
+    max-height: 168px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

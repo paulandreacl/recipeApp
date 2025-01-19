@@ -1,0 +1,19 @@
+.menuItems {
+  font: normal normal 500 13px / normal Poppins;
+  color: #425966;
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+  margin-left: 192px;
+}
+
+@media (max-width: 768px) {
+  .menuItems {
+    display: none;
+  }
+}
+
+.menuItem:hover {
+  color: #d84a4a;
+  cursor: pointer;
+}
