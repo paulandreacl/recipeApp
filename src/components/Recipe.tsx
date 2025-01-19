@@ -15,26 +15,26 @@ const Recipe = ({ recipe }: { recipe: Recipe }) => {
       </div>
       <div className={styles.footer}>
         <div className={styles.score}>
-          <img src="/src/assets/ic_star.svg" alt="Star" />
+          <img src="/imgs/ic_star.svg" alt="Star" />
           <p className={styles.scoreNumber}>{recipe.spoonacularScore}</p>
         </div>
-        <img src="/src/assets/ic_heart.svg" alt="Heart" />
+        <img src="/imgs/ic_heart.svg" alt="Heart" />
       </div>
       <div className={styles.description}>
         <RecipeDescription
-          image="/src/assets/cutlery.png"
+          image="/imgs/cutlery.png"
           alt="cutlery"
           title="Tamaño de la porción"
           description="4 raciones"
         />
         <RecipeDescription
-          image="/src/assets/clock.png"
+          image="/imgs/clock.png"
           alt="cutlery"
           title="Tiempo de preparación"
           description="10 minutos"
         />
         <RecipeDescription
-          image="/src/assets/chefs_hat.png"
+          image="/imgs/chefs_hat.png"
           alt="hat"
           title="Dificultad"
           description="fácil"

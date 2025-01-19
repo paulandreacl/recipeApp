@@ -6,7 +6,7 @@ const Footer = () => {
       <div className={styles.bgFooter}>
         <div className={styles.text}>Con el Patrocinio de</div>
         <div className={styles.imgSection}>
-          <img src="/src/assets/products.png" alt="Products" />
+          <img src="/imgs/products.png" alt="Products" />
         </div>
       </div>
     </footer>
