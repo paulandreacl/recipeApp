@@ -16,7 +16,9 @@ const Recipe = ({ recipe }: { recipe: Recipe }) => {
       <div className={styles.footer}>
         <div className={styles.score}>
           <img className={styles.starIcon} src="/imgs/ic_star.svg" alt="Star" />
-          <p className={styles.scoreNumber}>{recipe.spoonacularScore}</p>
+          <p className={styles.scoreNumber}>
+            {Math.round(recipe.spoonacularScore as number) / 10}
+          </p>
         </div>
         <img
           className={styles.heartIcon}
