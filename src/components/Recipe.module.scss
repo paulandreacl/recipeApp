@@ -13,10 +13,26 @@
   padding-bottom: 12px;
 }
 
+.card:hover {
+  width: 266px;
+  height: 322px;
+}
+
 @media (max-width: 768px) {
   .card:hover {
     width: 266px;
     height: 270px;
+  }
+}
+
+@media (max-width: 428px) {
+  .card {
+    width: 180px;
+    height: 182px;
+  }
+  .card:hover {
+    width: 180px;
+    height: 182px;
   }
 }
 
@@ -33,6 +49,17 @@
   object-fit: none;
   object-position: center;
   border-radius: 50%;
+}
+
+@media (max-width: 428px) {
+  .image {
+    width: 111px;
+    height: 107px;
+  }
+  .card .image img {
+    width: 111px;
+    height: 107px;
+  }
 }
 
 .title {
@@ -58,6 +85,18 @@
   white-space: nowrap;
 }
 
+@media (max-width: 428px) {
+  .title {
+    padding: 50px 23px 0px 23px;
+  }
+  .firstWord {
+    font: normal normal normal 20px/24px Poppins;
+  }
+  .restWords {
+    font: normal normal normal 20px/24px Monster Clubhouse;
+  }
+}
+
 .footer {
   display: flex;
   width: 100%;
@@ -79,9 +118,32 @@
   color: #425966;
 }
 
-.footer img {
+.starIcon {
   width: auto;
   height: auto;
+}
+
+.heartIcon {
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 428px) {
+  .footer {
+    padding: 0px 12px;
+  }
+  .scoreNumber {
+    font: normal normal normal 17px/26px Poppins;
+    letter-spacing: -0.34px;
+  }
+  .starIcon {
+    width: 16px;
+    height: 16px;
+  }
+  .heartIcon {
+    width: 13px;
+    height: auto;
+  }
 }
 
 .description {

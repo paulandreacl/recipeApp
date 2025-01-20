@@ -12,6 +12,32 @@
   padding-top: 5px;
 }
 
+.homeButton {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 25px 0 62px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .homeButton {
+    display: flex;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 428px) {
+  .navbar {
+    padding: 0 33px 0 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .title {
   display: flex;
   align-items: center;

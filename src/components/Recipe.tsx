@@ -15,10 +15,14 @@ const Recipe = ({ recipe }: { recipe: Recipe }) => {
       </div>
       <div className={styles.footer}>
         <div className={styles.score}>
-          <img src="/imgs/ic_star.svg" alt="Star" />
+          <img className={styles.starIcon} src="/imgs/ic_star.svg" alt="Star" />
           <p className={styles.scoreNumber}>{recipe.spoonacularScore}</p>
         </div>
-        <img src="/imgs/ic_heart.svg" alt="Heart" />
+        <img
+          className={styles.heartIcon}
+          src="/imgs/ic_heart.svg"
+          alt="Heart"
+        />
       </div>
       <div className={styles.description}>
         <RecipeDescription

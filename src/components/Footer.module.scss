@@ -45,12 +45,33 @@
     padding-left: 48px;
   }
   .imgSection {
-    margin-left: 80px;
+    margin-left: 25px;
+    padding-top: 10px;
   }
   .footer img {
-    max-height: 168px;
+    max-height: 188px;
     width: 100%;
     height: 100%;
     object-fit: contain;
+  }
+}
+
+@media (max-width: 428px) {
+  .bgFooter {
+    height: 70px;
+  }
+  .text {
+    font: normal normal normal 23px/28px Monster Clubhouse;
+    padding-left: 24px;
+  }
+  .footer img {
+    max-height: 106px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .imgSection {
+    margin-left: 25px;
+    padding-top: 20px;
   }
 }

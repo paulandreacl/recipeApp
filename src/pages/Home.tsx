@@ -3,6 +3,8 @@ import styles from './Home.module.scss';
 //import { fetchRecipes } from '../api/spoonacular';
 import Recipe from '../components/Recipe';
 import type { Recipe as RecipeInterface } from '../../types/recipe';
+import CardItems from '../components/CardItems';
+import { menuItemsMobile } from '../constants/menuConstantsMobile';
 
 const Home = () => {
   // const { data, isLoading, isError, error } = useQuery({
@@ -79,10 +81,20 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <div className={styles.bannerContainer}>
-        <img src="/imgs/banner.png" alt="Banner" />
+        <img className={styles.bannerImg} src="/imgs/banner.png" alt="Banner" />
         <div className={styles.bannerText}>
           <div>Recetas</div>
           <div>para todos</div>
+        </div>
+        <div className={styles.menuItems}>
+          {menuItemsMobile.map((item) => (
+            <CardItems
+              key={item.name}
+              img={item.img}
+              name={item.name}
+              path={item.path}
+            />
+          ))}
         </div>
         <div className={styles.content}>
           <div className={styles.title}>Nuevas Recetas</div>

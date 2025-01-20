@@ -12,7 +12,7 @@
   width: 100%;
 }
 
-.home img {
+.bannerImg {
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -44,6 +44,46 @@
   font: normal normal normal 67px/80px Monster Clubhouse;
 }
 
+@media (max-width: 428px) {
+  .bannerText {
+    top: 66px;
+    left: 57px;
+  }
+  .bannerImg {
+    height: 234px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .bannerText div {
+    font: normal normal normal 51px/77px Poppins;
+  }
+  .bannerText div + div {
+    top: 45px;
+    font: normal normal normal 51px/61px Monster Clubhouse;
+  }
+}
+
+.menuItems {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menuItems {
+    display: flex;
+    gap: 12px;
+    padding: 0px 36px;
+  }
+}
+
+@media (max-width: 428px) {
+  .menuItems {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 0px 30px;
+  }
+}
+
 .content {
   padding: 0px 70px;
 }
@@ -53,6 +93,17 @@
   text-align: left;
   color: #d84a4a;
   font: normal normal normal 67px/80px Monster Clubhouse;
+}
+
+@media (max-width: 428px) {
+  .content {
+    padding: 0px 23px;
+  }
+  .title {
+    font: normal normal normal 54px/65px Monster Clubhouse;
+    text-align: center;
+    padding: 0px;
+  }
 }
 
 .recipesContainer {
